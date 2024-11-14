@@ -1,0 +1,36 @@
+name: yulo_model  # 환경 이름
+channels:
+  - defaults
+  - conda-forge
+  - pytorch  # pytorch 관련 채널
+dependencies:
+  - python=3.12  # Python 버전
+  - pip
+  - pip:
+      - ultralytics==8.3.26
+      - fastapi==0.115.2
+      - opencv-python-headless==4.10.0.84
+      - opencv-contrib-python-headless==4.10.0.84
+      - sqlalchemy==2.0.36
+      - pydantic==2.9.2
+      - torch==2.5.0
+      - torchvision==0.20.0
+      - torchaudio==2.5.0
+      - mysql-connector-python==8.0.33
+      - aiohttp==3.8.5
+      - uvicorn==0.32.0
+      - matplotlib==3.9.2
+      - seaborn==0.13.2
+      - tqdm==4.66.5
+      - pandas==2.2.3
+  - ffmpeg  # ffmpeg 패키지
+  - gstreamer  # 비디오 스트리밍 관련 패키지
+  - libomp  # 멀티쓰레딩 관련 패키지
+  - cudatoolkit=12.4  # CUDA 툴킷
+  - pytorch-cuda=12.4  # pytorch CUDA 관련 패키지
+  - pip:
+      - fastapi
+      - sqlalchemy
+      - uvicorn
+      - opencv-python-headless
+      - ultralytics
